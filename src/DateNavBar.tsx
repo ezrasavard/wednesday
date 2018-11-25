@@ -40,6 +40,7 @@ export default class DateNavBar extends React.Component<IDateNavBarProps, IDateN
         return (
             <div className='DateNavBar'>
                 <div className='clicky' onClick={this.prevDate}>Prev</div>
+                {/* TODO: Can add "isDayHighlighted" prop to highlight days that have data */}
                 <SingleDatePicker
                         id='1'
                         date={this.state.date}
@@ -47,6 +48,7 @@ export default class DateNavBar extends React.Component<IDateNavBarProps, IDateN
                         onDateChange={(date: moment.Moment | null) => this.setState({date})}
                         onFocusChange={focusedInput => this.setState({focusedInput})}
                         numberOfMonths={1}
+                        isOutsideRange={(x: moment.Moment | null) => false}
                         enableOutsideDays
                     />
                 <div className='clicky' onClick={this.nextDate}>Next</div>
