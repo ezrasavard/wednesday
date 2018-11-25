@@ -18,6 +18,10 @@
   font-size: 1.5em;
 }
 
+.App-subtitle {
+  font-size: 1em;
+}
+
 .App-intro {
   font-size: large;
 }
@@ -25,4 +29,8 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.lifts {
+  margin: 0 auto;
 }
