@@ -9,17 +9,20 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin: 0;
+  padding: 1rem;
 }
 
 .App-subtitle {
   font-size: 1em;
+  margin: 0;
+  padding: 1rem;
+  padding-top: 0;
 }
 
 .App-intro {
@@ -33,4 +36,14 @@
 
 .lifts {
   margin: 0 auto;
+}
+
+.DateNavBar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.MainColumn {
+  width: 40%;
+  margin: 1rem auto;
 }
