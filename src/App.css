@@ -41,6 +41,13 @@
 .DateNavBar {
   display: grid;
   grid-template-columns: auto auto auto;
+  margin-bottom: 1rem;
+  height: 3rem;
+}
+
+.clicky {
+  margin: auto; /* Important */
+  text-align: center;
 }
 
 .MainColumn {

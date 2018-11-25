@@ -22,10 +22,24 @@ export default class DateNavBar extends React.Component<IDateNavBarProps, IDateN
         }
     }
 
+    private prevDate = (): void => {
+        this.addDays(-1);
+    }
+
+    private nextDate = (): void => {
+        this.addDays(1);
+    }
+
+    private addDays = (i: number): void => {
+        this.setState(prevState => ({
+            date: (prevState.date ? prevState.date : moment()).add(i, 'days')
+        }));
+    }
+
     public render() {
         return (
             <div className='DateNavBar'>
-                <div onClick={() => console.log('prev!')}>PREV</div>
+                <div className='clicky' onClick={this.prevDate}>Prev</div>
                 <SingleDatePicker
                         id='1'
                         date={this.state.date}
@@ -35,7 +49,7 @@ export default class DateNavBar extends React.Component<IDateNavBarProps, IDateN
                         numberOfMonths={1}
                         enableOutsideDays
                     />
-                <div onClick={() => console.log('next!')}>NEXT</div>
+                <div className='clicky' onClick={this.nextDate}>Next</div>
             </div>
         )
 
