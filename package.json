@@ -5,11 +5,19 @@
   "dependencies": {
     "@types/react-beautiful-dnd": "^7.1.2",
     "@types/react-dates": "^17.1.3",
+    "concurrently": "^4.1.0",
+    "pouchdb-adapter-http": "^7.0.0",
+    "pouchdb-adapter-idb": "^7.0.0",
+    "pouchdb-server": "^4.1.0",
     "react": "^16.6.3",
     "react-beautiful-dnd": "^10.0.2",
     "react-dates": "^18.2.2",
     "react-dom": "^16.6.3",
-    "react-scripts-ts": "3.1.0"
+    "react-scripts-ts": "^4.0.8",
+    "rxdb": "^8.0.4",
+    "rxjs": "^6.3.3",
+    "serve": "^10.1.1",
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
     "start": "react-scripts-ts start",
